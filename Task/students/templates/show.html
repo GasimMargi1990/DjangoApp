@@ -1,0 +1,67 @@
+!DOCTYPE html>
+<html>
+    <head>
+
+<title>Student</title>
+<head>
+<body>
+
+    <h2>The List of  Students</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID </th>
+                <th>Last Name  </th>
+                <th>First Name  </th>
+                <th>State  </th>
+                <th>Gender  </th>
+                <th>Student Status  </th>
+                <th>Major  </th>
+                <th>Country  </th>
+                <th>Age </th>
+                <th>SAT  </th>
+                <th>Grade  </th>
+                <th>Height  </th>
+                <th>action</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% for student in students%}
+            <tr>
+   <td>{{Student.ID}}<td>
+   <td>{{Student.LastName}}<td>
+     <td>{{Student.FirstName}}<td>
+      <td>{{Student.State}}<td>
+       <td>{{Student.Gender}}<td>
+      <td>{{Student.StudentStatus}}<td>
+    <td>{{Student.Major}}<td>
+    <td>{{Student.Country}}<td>
+     <td>{{Student.Age}}<td>
+   <td>{{Student.SAT}}<td>
+    <td>{{Student.Grade}}<td>
+        <td>{{Student.Height}}<td>
+
+            <td>
+                <a href="/edit/{{Student.id}}">Edit</a>
+                    <td>
+
+                        <td>
+                            <a href="/delete/{{Student.id}}">Edit</a>
+                                <td>
+                                </tr>
+                                {% endfor %}
+            <tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <button> <a style="color:white;" href="/stu"> Add New Record</a> </button
+
+
+</body>
+</html>

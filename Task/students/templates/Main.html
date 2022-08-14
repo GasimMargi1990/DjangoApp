@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<title>Student</title>
+<head>
+<body>
+
+    <h2>New Student</h2>
+
+<form method="POST" action="stu">
+    {% csrf_token %}
+  
+
+    {{ form.as_p }}
+
+    <div>
+        <br>
+        <button type="subnit">Submit</button>
+    </div>
+
+</form>
+</body>
+</html>

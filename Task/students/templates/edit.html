@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<title>Student</title>
+<head>
+<body>
+
+    <h2>Edit Student</h2>
+
+<form method="POST" action="/update/{{Student.id}}">
+    {% csrf_token %}
+  
+    <div>
+        <p>
+            <h3>Update Details</h3>
+        </p>
+
+       
+    </div>
+    <div>
+        <p> Student ID</p>
+        <div>
+            <input type="text" name="ID" value="{{Student.ID}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> Last Name</p>
+        <div>
+            <input type="text" name="LastName" value="{{Student.LastName}}" />
+        </div>
+    </div>
+
+    <div>
+        <p>First Name</p>
+        <div>
+            <input type="text" name="FirstName" value="{{Student.FirstName}}" />
+        </div>
+    </div>
+
+    <div>
+        <p>City</p>
+        <div>
+            <input type="text" name="City" value="{{Student.City}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> Gender</p>
+        <div>
+            <input type="text" name="Gender" value="{{Student.Gender}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> Student Status</p>
+        <div>
+            <input type="text" name="StudentStatus" value="{{Student.StudentStatus}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> Major</p>
+        <div>
+            <input type="Major" name="ID" value="{{Student.Major}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> Country</p>
+        <div>
+            <input type="text" name="Country" value="{{Student.Country}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> Age</p>
+        <div>
+            <input type="text" name="Age" value="{{Student.Age}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> SAT</p>
+        <div>
+            <input type="text" name="SAT" value="{{Student.SAT}}" />
+        </div>
+    </div>
+
+    <div>
+        <p> Grade</p>
+        <div>
+            <input type="text" name="Grade" value="{{Student.Grade}}" />
+        </div>
+    </div>
+    <div>
+        <p> Height</p>
+        <div>
+            <input type="text" name="Height" value="{{Student.Height}}" />
+        </div>
+
+
+
+    </div>
+        <br>
+        <button type="submit">Update</button>
+    <div>
+  
+
+   
+    {% comment %} {{ form.as_p }} {% endcomment %}
+
+    <div>
+        <br>
+        <button type="subnit">Submit</button>
+    </div>
+
+</form>
+</body>
+</html>
